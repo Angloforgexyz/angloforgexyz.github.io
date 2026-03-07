@@ -1,128 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AngloForge</title>
-
-<style>
-body {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    background: #0f1115;
-    color: #e6e6e6;
-}
-
-.container {
-    max-width: 760px;
-    margin: auto;
-    padding: 60px 20px;
-}
-
-h1 {
-    font-size: 2.8rem;
-    margin-bottom: 10px;
-}
-
-h2 {
-    margin-top: 60px;
-    font-size: 1.8rem;
-}
-
-.tagline {
-    font-size: 1.4rem;
-    font-weight: 500;
-    margin-bottom: 15px;
-}
-
-.subtagline {
-    font-size: 1.1rem;
-    color: #b5b5b5;
-    margin-bottom: 35px;
-}
-
-ul {
-    padding-left: 20px;
-}
-
-li {
-    margin: 6px 0;
-}
-
-.quote {
-    margin: 30px 0;
-    padding-left: 15px;
-    border-left: 3px solid #444;
-    color: #d0d0d0;
-}
-
-.author {
-    margin-top: 6px;
-    font-size: 0.9rem;
-    color: #999;
-}
-
-.highlight {
-    font-weight: 600;
-}
-
-.form-section {
-    margin-top: 40px;
-}
-
-input, select, textarea {
-    width: 100%;
-    padding: 12px;
-    margin-top: 8px;
-    margin-bottom: 18px;
-    border-radius: 6px;
-    border: 1px solid #333;
-    background: #181b22;
-    color: #fff;
-}
-
-button {
-    background: #ffffff;
-    color: #000;
-    padding: 12px 18px;
-    border: none;
-    border-radius: 6px;
-    font-weight: 600;
-    cursor: pointer;
-}
-
-button:hover {
-    opacity: 0.9;
-}
-
-.small {
-    margin-top: 20px;
-    font-size: 0.9rem;
-    color: #888;
-}
-</style>
-</head>
-
-<body>
-
-<div class="container">
+<main>
 
 <h1>AngloForge</h1>
 
-<div class="tagline">Control your speech. Fluency follows.</div>
+<h2>Control your speech. Fluency follows.</h2>
 
-<div class="subtagline">
-Speak English with the same control you have in Spanish — even under pressure.
-</div>
+<p><strong>Speak English with the same control you have in Spanish — even under pressure.</strong></p>
 
-<p>
-Most professionals don’t struggle with English because they lack vocabulary.
-</p>
+<p>Most professionals don’t struggle with English because they lack vocabulary.</p>
 
-<p>
-They struggle because their <span class="highlight">speech system collapses under pressure.</span>
-</p>
+<p>They struggle because their <strong>speech system collapses under pressure.</strong></p>
 
 <p>The moment the pressure rises, hesitation takes over.</p>
 
@@ -134,10 +20,10 @@ They struggle because their <span class="highlight">speech system collapses unde
 </ul>
 
 <p>
-AngloForge develops the <span class="highlight">physical foundations of speech</span> for Spanish-speaking professionals who need reliable English in high-pressure situations.
+AngloForge develops the <strong>physical foundations of speech</strong> for Spanish-speaking professionals who need reliable English in high-pressure situations.
 </p>
 
-<p class="highlight">Training targets three speech systems:</p>
+<p><strong>Training targets three speech systems:</strong></p>
 
 <ul>
 <li>Breath control</li>
@@ -147,34 +33,38 @@ AngloForge develops the <span class="highlight">physical foundations of speech</
 
 <p>This is not a course for passive learners.</p>
 
-<p class="highlight">It is a performance lab for professionals willing to train deliberately.</p>
-
+<p><strong>It is a performance lab for professionals willing to train deliberately.</strong></p>
 
 <h2>What Professionals Say</h2>
 
-<div class="quote">
+<blockquote>
+<p>
 "Mi mayor dificultad era la pronunciación y la inseguridad al hablar en inglés. Desde la primera clase noté cambios gracias al enfoque basado en razonamiento, no memorización."
-<div class="author">— Mauricio B., Ingeniero Industrial</div>
-</div>
+</p>
+<footer>— Mauricio B., Ingeniero Industrial</footer>
+</blockquote>
 
-<div class="quote">
+<blockquote>
+<p>
 "Antes me costaba entender lo que leía. Ahora puedo generar ideas directamente en inglés sin traducir y me siento mucho más seguro al comunicarme."
-<div class="author">— Gustavo L., Compositor</div>
-</div>
+</p>
+<footer>— Gustavo L., Compositor</footer>
+</blockquote>
 
-<div class="quote">
+<blockquote>
+<p>
 "Mi inglés hablado se volvió mucho más fluido y natural. Gracias al nivel que logré con AngloForge, ahora tengo oportunidades laborales en otros países."
-<div class="author">— Martha C., Diseñadora Gráfica</div>
-</div>
-
+</p>
+<footer>— Martha C., Diseñadora Gráfica</footer>
+</blockquote>
 
 <h2>The Flow Forge</h2>
 
 <p>
-A <span class="highlight">12-week speech training cycle</span> designed for real professional schedules.
+A <strong>12-week speech training cycle</strong> designed for real professional schedules.
 </p>
 
-<p class="highlight">Goal: eliminate hesitation and build reliable English speech for:</p>
+<p><strong>Goal: eliminate hesitation and build reliable English speech for:</strong></p>
 
 <ul>
 <li>Meetings</li>
@@ -184,23 +74,20 @@ A <span class="highlight">12-week speech training cycle</span> designed for real
 <li>High-pressure conversations</li>
 </ul>
 
-<p class="highlight">Only 8 seats available.</p>
-
-
-<div class="form-section">
+<p><strong>Only 8 seats available.</strong></p>
 
 <h2>Application</h2>
 
 <form>
 
-<label>Full Name</label>
-<input type="text" required>
+<label for="name">Full Name</label><br>
+<input id="name" name="name" type="text" required><br><br>
 
-<label>Email</label>
-<input type="email" required>
+<label for="email">Email</label><br>
+<input id="email" name="email" type="email" required><br><br>
 
-<label>Current English Level</label>
-<select required>
+<label for="level">Current English Level</label><br>
+<select id="level" name="level" required>
 <option value="">Select one</option>
 <option>A2</option>
 <option>B1</option>
@@ -208,25 +95,23 @@ A <span class="highlight">12-week speech training cycle</span> designed for real
 <option>C1</option>
 <option>C2</option>
 </select>
+<br><br>
 
-<label>Where do you hesitate most when speaking English?</label>
-<textarea rows="3" placeholder="Meetings, presentations, phone calls, interviews, casual conversation, etc."></textarea>
+<label for="hesitation">Where do you hesitate most when speaking English?</label><br>
+<textarea id="hesitation" name="hesitation" rows="3"
+placeholder="Meetings, presentations, phone calls, interviews, casual conversation, etc."></textarea>
+<br><br>
 
-<label>Why should you be accepted into the program?</label>
-<textarea rows="4"></textarea>
+<label for="why">Why should you be accepted into the program?</label><br>
+<textarea id="why" name="why" rows="4"></textarea>
+<br><br>
 
 <button type="submit">Submit Application</button>
 
 </form>
 
-<p class="small">
-Applications are reviewed manually.  
-Selected candidates will be invited to a short diagnostic call.
+<p>
+Applications are reviewed manually. Selected candidates will be invited to a short diagnostic call.
 </p>
 
-</div>
-
-</div>
-
-</body>
-</html>
+</main>

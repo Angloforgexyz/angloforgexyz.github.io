@@ -7,79 +7,99 @@
 
 <style>
 body {
-  margin: 0;
-  background: #0a0a0a;
-  color: #e8e8e8;
-  font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
-  line-height: 1.6;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    background: #0f1115;
+    color: #e6e6e6;
 }
 
 .container {
-  max-width: 720px;
-  margin: 0 auto;
-  padding: 60px 20px;
+    max-width: 760px;
+    margin: auto;
+    padding: 60px 20px;
 }
 
 h1 {
-  font-size: 2.8rem;
-  margin-bottom: 10px;
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+}
+
+h2 {
+    margin-top: 60px;
+    font-size: 1.8rem;
 }
 
 .tagline {
-  color: #999;
-  margin-bottom: 40px;
-  font-size: 1.2rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-bottom: 15px;
 }
 
-.section {
-  margin-top: 60px;
-}
-
-.card {
-  background: #111;
-  border: 1px solid #222;
-  padding: 30px;
-  border-radius: 8px;
+.subtagline {
+    font-size: 1.1rem;
+    color: #b5b5b5;
+    margin-bottom: 35px;
 }
 
 ul {
-  padding-left: 20px;
+    padding-left: 20px;
 }
 
 li {
-  margin-bottom: 6px;
+    margin: 6px 0;
 }
 
-input, textarea, select {
-  width: 100%;
-  padding: 12px;
-  margin-top: 6px;
-  margin-bottom: 18px;
-  background: #0f0f0f;
-  border: 1px solid #333;
-  color: white;
-  border-radius: 4px;
+.quote {
+    margin: 30px 0;
+    padding-left: 15px;
+    border-left: 3px solid #444;
+    color: #d0d0d0;
+}
+
+.author {
+    margin-top: 6px;
+    font-size: 0.9rem;
+    color: #999;
+}
+
+.highlight {
+    font-weight: 600;
+}
+
+.form-section {
+    margin-top: 40px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    margin-bottom: 18px;
+    border-radius: 6px;
+    border: 1px solid #333;
+    background: #181b22;
+    color: #fff;
 }
 
 button {
-  width: 100%;
-  padding: 14px;
-  background: #5b47ff;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  font-weight: bold;
-  cursor: pointer;
+    background: #ffffff;
+    color: #000;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
 }
 
 button:hover {
-  background: #6d5cff;
+    opacity: 0.9;
 }
 
 .small {
-  color: #666;
-  font-size: 0.9rem;
-  margin-top: 20px;
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #888;
 }
 </style>
 </head>
@@ -90,8 +110,10 @@ button:hover {
 
 <h1>AngloForge</h1>
 
-<div class="tagline">
-Control first. Speed follows.
+<div class="tagline">Control your speech. Fluency follows.</div>
+
+<div class="subtagline">
+Speak English with the same control you have in Spanish — even under pressure.
 </div>
 
 <p>
@@ -99,118 +121,111 @@ Most professionals don’t struggle with English because they lack vocabulary.
 </p>
 
 <p>
-They struggle because their <strong>speech system collapses under pressure.</strong>
+They struggle because their <span class="highlight">speech system collapses under pressure.</span>
 </p>
 
-<p>
-Meetings.<br>
-Presentations.<br>
-Interviews.<br>
-Phone calls.
-</p>
-
-<p>
-AngloForge develops the <strong>physical foundations of speech</strong> for Spanish-speaking professionals who need reliable English in high-pressure situations.
-</p>
-
-<p>Training focuses on:</p>
+<p>The moment the pressure rises, hesitation takes over.</p>
 
 <ul>
-<li>breath control</li>
-<li>sound precision</li>
-<li>hesitation collapse</li>
+<li>Meetings</li>
+<li>Presentations</li>
+<li>Interviews</li>
+<li>Phone calls</li>
 </ul>
 
-<p><strong>This is not a course for passive learners.</strong></p>
-
 <p>
-It is a <strong>performance lab for professionals willing to train deliberately.</strong>
+AngloForge develops the <span class="highlight">physical foundations of speech</span> for Spanish-speaking professionals who need reliable English in high-pressure situations.
 </p>
 
-<div class="section">
+<p class="highlight">Training targets three speech systems:</p>
 
-<div class="card">
-<section class="testimonials">
+<ul>
+<li>Breath control</li>
+<li>Sound precision</li>
+<li>Hesitation collapse</li>
+</ul>
+
+<p>This is not a course for passive learners.</p>
+
+<p class="highlight">It is a performance lab for professionals willing to train deliberately.</p>
+
 
 <h2>What Professionals Say</h2>
 
-<div class="testimonial">
-<p>
-"Antes de entrenar en Angloforge, mi mayor dificultad era la pronunciación y la inseguridad al comunicarme en Inglés. Desde la primera clase noté los cambios debido al enfoque basado en razonamiento más que la memorización."
-</p>
-<strong>— Mauricio B., Ingeniero Industrial </strong>
+<div class="quote">
+"Mi mayor dificultad era la pronunciación y la inseguridad al hablar en inglés. Desde la primera clase noté cambios gracias al enfoque basado en razonamiento, no memorización."
+<div class="author">— Mauricio B., Ingeniero Industrial</div>
 </div>
 
-<div class="testimonial">
-<p>
-"Me costaba mucho trabajo entender lo que leía. Ahora me siento más seguro al comunicarme y puedo generar ideas sencillas directamente en el idioma sin traducir. "
-</p>
-<strong>— Gustavo L., Compositor</strong>
+<div class="quote">
+"Antes me costaba entender lo que leía. Ahora puedo generar ideas directamente en inglés sin traducir y me siento mucho más seguro al comunicarme."
+<div class="author">— Gustavo L., Compositor</div>
 </div>
 
-<div class="testimonial">
-<p>
-"El inglés hablado se volvió más fluído, inclusión de mayor vocabulario, especialmente de frases nativas sin traducción literal al español.
-Gracias al nivel de inglés que logré con Angloforge, se han abierto oportunidades laborales para mí en otros países."
-</p>
-<strong>— Martha C., Diseñadora Gráfica</strong>
+<div class="quote">
+"Mi inglés hablado se volvió mucho más fluido y natural. Gracias al nivel que logré con AngloForge, ahora tengo oportunidades laborales en otros países."
+<div class="author">— Martha C., Diseñadora Gráfica</div>
 </div>
 
-</section>
+
 <h2>The Flow Forge</h2>
 
 <p>
-A <strong>12-week speech training cycle</strong> built around real professional schedules.
+A <span class="highlight">12-week speech training cycle</span> designed for real professional schedules.
 </p>
 
-<p>
-Goal: eliminate hesitation and build <strong>reliable English speech</strong> for:
-</p>
+<p class="highlight">Goal: eliminate hesitation and build reliable English speech for:</p>
 
 <ul>
-<li>meetings</li>
-<li>presentations</li>
-<li>phone calls</li>
-<li>interviews</li>
-<li>high-pressure conversations</li>
+<li>Meetings</li>
+<li>Presentations</li>
+<li>Phone calls</li>
+<li>Interviews</li>
+<li>High-pressure conversations</li>
 </ul>
 
-<p><strong>Only 8 seats available.</strong></p>
+<p class="highlight">Only 8 seats available.</p>
 
-<form action="https://formspree.io/f/xwvnonep" method="POST">
+
+<div class="form-section">
+
+<h2>Application</h2>
+
+<form>
 
 <label>Full Name</label>
-<input type="text" name="name" required>
+<input type="text" required>
 
 <label>Email</label>
-<input type="email" name="email" required>
+<input type="email" required>
 
 <label>Current English Level</label>
-<select name="level" required>
+<select required>
 <option value="">Select one</option>
-<option>Beginner</option>
-<option>Intermediate</option>
-<option>Advanced</option>
-<option>Near-native</option>
+<option>A2</option>
+<option>B1</option>
+<option>B2</option>
+<option>C1</option>
+<option>C2</option>
 </select>
 
 <label>Where do you hesitate most when speaking English?</label>
-<textarea name="hesitation" rows="3" placeholder="Meetings, presentations, phone calls, interviews, casual conversation, etc." required></textarea>
+<textarea rows="3" placeholder="Meetings, presentations, phone calls, interviews, casual conversation, etc."></textarea>
 
 <label>Why should you be accepted into the program?</label>
-<textarea name="why" rows="4" required></textarea>
+<textarea rows="4"></textarea>
 
 <button type="submit">Submit Application</button>
 
 </form>
 
-<div class="small">
-Applications are reviewed manually.<br>
-Selected candidates will be invited to a <strong>short diagnostic call.</strong>
-</div>
+<p class="small">
+Applications are reviewed manually.  
+Selected candidates will be invited to a short diagnostic call.
+</p>
 
 </div>
-</div>
+
 </div>
 
 </body>

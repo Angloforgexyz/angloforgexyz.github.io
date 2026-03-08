@@ -2,231 +2,216 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<title>The Flow Forge — Application</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AngloForge</title>
 
 <style>
-body {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    background: #0f1115;
-    color: #e6e6e6;
+
+body{
+background:#0b0b0f;
+color:#e8e8f0;
+font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+padding:40px 20px;
+max-width:600px;
+margin:auto;
 }
 
-.container {
-    max-width: 760px;
-    margin: auto;
-    padding: 60px 20px;
+h1{
+margin-bottom:10px;
 }
 
-h1 {
-    font-size: 2.8rem;
-    margin-bottom: 10px;
+p{
+color:#9aa0b3;
+margin-bottom:30px;
 }
 
-h2 {
-    margin-top: 60px;
-    font-size: 1.8rem;
+/* ========================= */
+/* COMBAT BANNER */
+/* ========================= */
+
+.combat-banner{
+background:#14141c;
+border:1px solid #333;
+padding:24px;
+border-radius:10px;
+margin-bottom:40px;
+text-align:center;
 }
 
-.tagline {
-    font-size: 1.4rem;
-    font-weight: 500;
-    margin-bottom: 15px;
+.combat-banner h2{
+margin-top:0;
+margin-bottom:10px;
+font-size:22px;
 }
 
-.subtagline {
-    font-size: 1.1rem;
-    color: #b5b5b5;
-    margin-bottom: 35px;
+.combat-banner p{
+margin-bottom:20px;
+color:#9aa0b3;
 }
 
-ul {
-    padding-left: 20px;
+.combat-button{
+display:inline-block;
+padding:14px 26px;
+background:#ff3c3c;
+color:white;
+text-decoration:none;
+border-radius:8px;
+font-weight:700;
+font-size:16px;
+transition:transform .1s ease, background .1s ease;
 }
 
-li {
-    margin: 6px 0;
+.combat-button:hover{
+background:#ff5555;
+transform:scale(1.05);
 }
 
-.quote {
-    margin: 30px 0;
-    padding-left: 15px;
-    border-left: 3px solid #444;
-    color: #d0d0d0;
+/* ========================= */
+/* FORM */
+/* ========================= */
+
+input,select,textarea,button{
+width:100%;
+padding:12px;
+margin-top:12px;
+background:#14141c;
+color:white;
+border:1px solid #333;
+border-radius:6px;
+font-size:14px;
+box-sizing:border-box;
 }
 
-.author {
-    margin-top: 6px;
-    font-size: 0.9rem;
-    color: #999;
+textarea{
+min-height:100px;
+resize:vertical;
 }
 
-.highlight {
-    font-weight: 600;
+button{
+background:#5b47ff;
+cursor:pointer;
+font-weight:600;
 }
 
-.form-section {
-    margin-top: 40px;
+button:hover{
+background:#6d5cff;
 }
 
-input, select, textarea {
-    width: 100%;
-    padding: 12px;
-    margin-top: 8px;
-    margin-bottom: 18px;
-    border-radius: 6px;
-    border: 1px solid #333;
-    background: #181b22;
-    color: #fff;
+#form-status{
+margin-top:20px;
+font-weight:500;
 }
 
-button {
-    background: #ffffff;
-    color: #000;
-    padding: 12px 18px;
-    border: none;
-    border-radius: 6px;
-    font-weight: 600;
-    cursor: pointer;
-}
-
-button:hover {
-    opacity: 0.9;
-}
-
-.small {
-    margin-top: 20px;
-    font-size: 0.9rem;
-    color: #888;
-}
 </style>
-</head>
 
+</head>
 <body>
 
-<div class="container">
+<!-- COMBAT BANNER -->
 
-<h1>AngloForge</h1>
+<div class="combat-banner">
 
-<div class="tagline">Control your speech. Fluency follows.</div>
+<h2>⚔️ AngloForge Combat is now playable</h2>
 
-<div class="subtagline">
-Speak English with the same control you have in Spanish — even under pressure.
+<p>Train your phonology in battle.</p>
+
+<a
+href="/combat/"
+class="combat-button"
+>
+ENTER COMBAT
+</a>
+
 </div>
 
-<p>
-Most professionals don’t struggle with English because they lack vocabulary.
-</p>
+<h1>The Flow Forge</h1>
+<p>Elite 6-week performance lab. 8 seats only.</p>
 
-<p>
-They struggle because their <span class="highlight">speech system collapses under pressure.</span>
-</p>
+<form
+action="https://formspree.io/f/xwvnonep"
+method="POST"
+data-formspree
+>
 
-<p>The moment the pressure rises, hesitation takes over.</p>
+<input
+type="text"
+name="name"
+placeholder="Full Name"
+required
+>
 
-<ul>
-<li>Meetings</li>
-<li>Presentations</li>
-<li>Interviews</li>
-<li>Phone calls</li>
-</ul>
+<input
+type="email"
+name="email"
+placeholder="Email"
+required
+>
 
-<p>
-AngloForge develops the <span class="highlight">physical foundations of speech</span> for Spanish-speaking professionals who need reliable English in high-pressure situations.
-</p>
-
-<p class="highlight">Training targets three speech systems:</p>
-
-<ul>
-<li>Breath control</li>
-<li>Sound precision</li>
-<li>Hesitation collapse</li>
-</ul>
-
-<p>This is not a course for passive learners.</p>
-
-<p class="highlight">It is a performance lab for professionals willing to train deliberately.</p>
-
-
-<h2>What Professionals Say</h2>
-
-<div class="quote">
-"Mi mayor dificultad era la pronunciación y la inseguridad al hablar en inglés. Desde la primera clase noté cambios gracias al enfoque basado en razonamiento, no memorización."
-<div class="author">— Mauricio B., Ingeniero Industrial</div>
-</div>
-
-<div class="quote">
-"Antes me costaba entender lo que leía. Ahora puedo generar ideas directamente en inglés sin traducir y me siento mucho más seguro al comunicarme."
-<div class="author">— Gustavo L., Compositor</div>
-</div>
-
-<div class="quote">
-"Mi inglés hablado se volvió mucho más fluido y natural. Gracias al nivel que logré con AngloForge, ahora tengo oportunidades laborales en otros países."
-<div class="author">— Martha C., Diseñadora Gráfica</div>
-</div>
-
-
-<h2>The Flow Forge</h2>
-
-<p>
-A <span class="highlight">12-week speech training cycle</span> designed for real professional schedules.
-</p>
-
-<p class="highlight">Goal: eliminate hesitation and build reliable English speech for:</p>
-
-<ul>
-<li>Meetings</li>
-<li>Presentations</li>
-<li>Phone calls</li>
-<li>Interviews</li>
-<li>High-pressure conversations</li>
-</ul>
-
-<p class="highlight">Only 8 seats available.</p>
-
-
-<div class="form-section">
-
-<h2>Application</h2>
-
-<form>
-
-<label>Full Name</label>
-<input type="text" required>
-
-<label>Email</label>
-<input type="email" required>
-
-<label>Current English Level</label>
-<select required>
-<option value="">Select one</option>
-<option>A2</option>
-<option>B1</option>
-<option>B2</option>
-<option>C1</option>
-<option>C2</option>
+<select name="level" required>
+<option value="">Current English Level</option>
+<option>A1 — Beginner</option>
+<option>A2 — Elementary</option>
+<option>B1 — Intermediate</option>
+<option>B2 — Upper-Intermediate</option>
+<option>C1 — Advanced</option>
+<option>C2 — Mastery</option>
 </select>
 
-<label>Where do you hesitate most when speaking English?</label>
-<textarea rows="3" placeholder="Meetings, presentations, phone calls, interviews, casual conversation, etc."></textarea>
+<textarea
+name="hesitation"
+placeholder="Where do you hesitate most?"
+required
+></textarea>
 
-<label>Why should you be accepted into the program?</label>
-<textarea rows="4"></textarea>
+<textarea
+name="reason"
+placeholder="Why should you be accepted?"
+required
+></textarea>
 
-<button type="submit">Submit Application</button>
+<button type="submit">
+Submit Application
+</button>
+
+<p id="form-status"></p>
 
 </form>
 
-<p class="small">
-Applications are reviewed manually.  
-Selected candidates will be invited to a short diagnostic call.
-</p>
+<script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
 
-</div>
+<script>
+window.addEventListener("DOMContentLoaded", function () {
 
-</div>
+const form = document.querySelector("form");
+const status = document.getElementById("form-status");
+
+form.addEventListener("submit", async function(event) {
+
+event.preventDefault();
+
+const data = new FormData(form);
+
+const response = await fetch(form.action, {
+method: form.method,
+body: data,
+headers: {
+Accept: "application/json"
+}
+});
+
+if (response.ok) {
+status.innerHTML = "Application received.";
+status.style.color = "#4cff9a";
+form.reset();
+} else {
+status.innerHTML = "Submission failed.";
+status.style.color = "#ff6b6b";
+}
+
+});
+
+});
+</script>
 
 </body>
 </html>
